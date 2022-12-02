@@ -11,6 +11,15 @@
 
     <meta name="keywords" content="Gastronomia, pizzeria, comida, barato">
 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    
+    <link rel="manifest" href="favicons/site.webmanifest">
+
     <title>pizzeria - pagina principal</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,19 +39,44 @@
 <body>
     
     <header>
-        <nav class="navbar bg-light sticky-top m-0 p-0">
-            <div class="container-fluid d-flex justify-content-center">
+        <nav class="navbar bg-light sticky-top navbar bg-light  m-0 p-0">
+            <div class="container-fluid">
                 <a class="navbar-brand d-flex justify-content-start" href="./index.html">
                     <img src="./img/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
                     Pizzeria
                 </a>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/isesion.html">Iniciar sesion</a></li>
-                </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Pizzeria</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        SobreNosotros/Contacto/InicioSesion
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                        <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="./pages/isesion.html">Iniciar Sesion</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
@@ -50,7 +84,7 @@
         <section>
             <h1>Pizzeria</h1>
             <h2 class="d-flex justify-content-center">Pizzeria artesanal</h2>
-            <p>
+            <p class="p-3">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ex omnis voluptatibus, at eligendi porro, ipsum, minus iure ab dolore facere est consequatur ut facilis unde. Iste culpa minus ullam!
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quis rerum quibusdam quo? Reiciendis, error dolores laborum rerum atque quibusdam, animi fugit cum, corrupti soluta magnam at unde quisquam! Voluptatibus!
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam hic cupiditate corrupti, velit voluptatem harum ipsa beatae voluptas, dolores dolorum maiores voluptatum consectetur nemo quisquam. Amet eum optio voluptate quis.
@@ -64,13 +98,13 @@
         <div>
             <img src="./img/ejemplo.jpg" class="rounded mx-auto d-block" alt="">
         </div>
-        <p>
+        <p class="p-4">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero exercitationem facere, eligendi culpa unde labore quaerat nesciunt soluta est sunt explicabo accusantium reiciendis blanditiis aut aspernatur optio ut ad dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptate ab tenetur voluptas officia corrupti error, sit quos hic expedita natus deleniti, debitis ducimus inventore dolor eos! Rerum, ab doloribus!
         </p>
     </aside>
-    <footer class="m-0 p-0">
-        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic facilis nobis, eius voluptatum vel deserunt fugit distinctio repellendus expedita laboriosam mollitia obcaecati accusamus rem consequatur quae minus inventore reiciendis assumenda!</h4>
-        <p class="pfooter">Seguinos en nuestras redes</p>
+    <footer class="m-0 p-2">
+        <h4 class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic facilis nobis, eius voluptatum vel deserunt fugit distinctio repellendus expedita laboriosam mollitia obcaecati accusamus rem consequatur quae minus inventore reiciendis assumenda!</h4>
+        <p class="pfooter p-3">Seguinos en nuestras redes</p>
         <div class="footernav m-0 p-0">
             <ul>
             <li><a href="https://www.instagram.com/">Instagram</a></li>
